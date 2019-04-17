@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitOfWork.Core\UnitOfWork.Core.csproj" />
+    <ProjectReference Include="..\UnitOfWork.EFCore\UnitOfWork.EFCore.csproj" />
+    <ProjectReference Include="..\UnitOfWorl.Implementation.DomainEntities\UnitOfWork.Implementation.DomainEntities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+</Project>
